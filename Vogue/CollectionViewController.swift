@@ -34,9 +34,6 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
         cell.productImage.layer.cornerRadius = 2
         
         cell.config(arrayLabel[indexPath.item], image: accessoryImage[indexPath.item])
-//        addToCart.tag = indexPath.item
-//        addToCart.addTarget(self, action: Selector(CollectionViewController.addToCartButtonTapped(_:)), forControlEvents: UIControlEvents.TouchUpInside)
-//        addToCart.addTarget(self, action: Selector(CollectionViewController.addToCartButtonTapped(_:)), forControlEvents: UIControlEvents.TouchUpInside)
         return cell
         
     }
@@ -57,4 +54,9 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
         view.layoutIfNeeded()
         return view;
     }
+    
+    @IBAction func backBarButton(sender: AnyObject) {
+        navigationController?.popViewControllerAnimated(false)
+    }
+    
 }

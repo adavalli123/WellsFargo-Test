@@ -326,8 +326,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Shop" id="nte-Sh-fVM">
-                        <barButtonItem key="backBarButtonItem" title="Back" id="iSi-3d-nXj"/>
-                        <barButtonItem key="rightBarButtonItem" image="ios7-cart" style="plain" id="hYH-bN-t8U"/>
+                        <barButtonItem key="leftBarButtonItem" image="chevron-left" id="cUG-Gf-5ef">
+                            <connections>
+                                <action selector="backBarButton:" destination="Q10-ax-Qe3" id="IEH-cK-CCp"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="ios7-cart" id="hYH-bN-t8U"/>
                     </navigationItem>
                     <connections>
                         <outlet property="collectionview" destination="xVr-Od-PBV" id="44k-6G-1dv"/>
@@ -358,6 +362,7 @@
     </scenes>
     <resources>
         <image name="background" width="4000" height="3000"/>
+        <image name="chevron-left" width="36" height="36"/>
         <image name="ios7-cart" width="36" height="39"/>
         <image name="ios7-drag" width="36" height="36"/>
         <image name="ios7-person" width="36" height="36"/>
