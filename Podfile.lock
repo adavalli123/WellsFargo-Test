@@ -1,0 +1,28 @@
+PODS:
+  - Alamofire (3.4.1)
+  - CBGPromise (0.3.1)
+  - JHSpinner (0.1.1)
+  - MBProgressHUD (1.0.0)
+  - MGSwipeTableCell (1.5.5)
+  - SwiftyJSON (2.3.2)
+  - Swinject (1.1.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.3)
+  - CBGPromise
+  - JHSpinner
+  - MBProgressHUD
+  - MGSwipeTableCell
+  - SwiftyJSON
+  - Swinject
+
+SPEC CHECKSUMS:
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  CBGPromise: 9f3be6ae2e3fce9c42be1fe39eac881e5958fa34
+  JHSpinner: d2d986f3116ea4087f35214d5e2c95221d3630ee
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MGSwipeTableCell: bafeb5f351124544c9364ecbdf24c7b06a37d340
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  Swinject: 3debc5ac926dcd1be00947265a9db7a5f31b272a
+
+COCOAPODS: 0.39.0
