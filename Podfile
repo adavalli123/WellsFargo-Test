@@ -9,7 +9,7 @@ target 'Vogue' do
     pod 'CBGPromise'
     pod 'MBProgressHUD'
     pod 'SwiftyJSON'
-    pod "JHSpinner"
+    pod 'MIBadgeButton-Swift'
     pod 'MGSwipeTableCell'
 end
 

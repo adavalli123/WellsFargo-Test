@@ -23,6 +23,7 @@
 		8D7BF3301D4FCE5300DBCCF8 /* CollectionViewReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7BF32F1D4FCE5300DBCCF8 /* CollectionViewReusableView.swift */; };
 		8D950BD61D5021B7007F48A4 /* TouchIDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D950BD31D5021B7007F48A4 /* TouchIDViewController.swift */; };
 		8D950BD81D5021B7007F48A4 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D950BD51D5021B7007F48A4 /* PresentationController.swift */; };
+		8DA96D231D5077E500069406 /* MIBadgeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA96D221D5077E500069406 /* MIBadgeButton.swift */; };
 		8DF792CA1D4E6B85006B1CEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF792C91D4E6B85006B1CEF /* AppDelegate.swift */; };
 		8DF792CC1D4E6B85006B1CEF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF792CB1D4E6B85006B1CEF /* MainViewController.swift */; };
 		8DF792CF1D4E6B85006B1CEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DF792CD1D4E6B85006B1CEF /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		8D7BF32F1D4FCE5300DBCCF8 /* CollectionViewReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewReusableView.swift; sourceTree = "<group>"; };
 		8D950BD31D5021B7007F48A4 /* TouchIDViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchIDViewController.swift; sourceTree = "<group>"; };
 		8D950BD51D5021B7007F48A4 /* PresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
+		8DA96D221D5077E500069406 /* MIBadgeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MIBadgeButton.swift; sourceTree = "<group>"; };
 		8DF792C61D4E6B85006B1CEF /* Vogue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vogue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DF792C91D4E6B85006B1CEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8DF792CB1D4E6B85006B1CEF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 				8D7BF32B1D4FBC7A00DBCCF8 /* CollectionViewController.swift */,
 				8D7BF32D1D4FBC8C00DBCCF8 /* CollectionViewCell.swift */,
 				8D7BF32F1D4FCE5300DBCCF8 /* CollectionViewReusableView.swift */,
+				8DA96D221D5077E500069406 /* MIBadgeButton.swift */,
 			);
 			path = Vogue;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				8D7BF3301D4FCE5300DBCCF8 /* CollectionViewReusableView.swift in Sources */,
 				8D7BF3281D4EFB6900DBCCF8 /* Swinject.swift in Sources */,
 				8D7BF3201D4EF79300DBCCF8 /* HTTPRequester.swift in Sources */,
+				8DA96D231D5077E500069406 /* MIBadgeButton.swift in Sources */,
 				8DF792CC1D4E6B85006B1CEF /* MainViewController.swift in Sources */,
 				8D7BF31C1D4EF71D00DBCCF8 /* FutureResult.swift in Sources */,
 				8D7BF32C1D4FBC7A00DBCCF8 /* CollectionViewController.swift in Sources */,

@@ -330,9 +330,18 @@
                                 <action selector="backBarButton:" destination="Q10-ax-Qe3" id="IEH-cK-CCp"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" image="ios7-cart" id="hYH-bN-t8U"/>
+                        <barButtonItem key="rightBarButtonItem" id="fzl-9S-BOp">
+                            <inset key="imageInsets" minX="0.0" minY="0.0" maxX="30" maxY="0.0"/>
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VqI-Ql-x8c" customClass="MIBadgeButton" customModule="Vogue" customModuleProvider="target">
+                                <rect key="frame" x="540" y="2" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                <state key="normal" backgroundImage="ios7-cart"/>
+                            </button>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="badgeButton" destination="VqI-Ql-x8c" id="D53-vL-jld"/>
                         <outlet property="collectionview" destination="xVr-Od-PBV" id="44k-6G-1dv"/>
                     </connections>
                 </viewController>
@@ -343,7 +352,6 @@
         <!--TouchID-->
         <scene sceneID="kZB-c7-FV7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xA8-4h-qiR" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="TouchID" id="hi2-XD-8GQ" customClass="TouchIDViewController" customModule="Vogue" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2z9-uG-lEz"/>
@@ -416,6 +424,7 @@
                         <segue destination="L9p-pF-v8C" kind="show" identifier="ItemViewController" id="xOy-kc-KHz"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xA8-4h-qiR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1901" y="351"/>
         </scene>

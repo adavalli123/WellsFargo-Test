@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import BBBadgeBarButtonItem
 
 class CollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
+    @IBOutlet var badgeButton: MIBadgeButton!
+    @IBOutlet var CartBarButton: UIBarButtonItem!
     @IBOutlet var collectionview: UICollectionView!
     @IBOutlet var addToCart: UIButton!
     
@@ -22,6 +25,12 @@ class CollectionViewController: UIViewController, UICollectionViewDelegate, UICo
         super.viewDidLoad()
         collectionview.delegate = self
         collectionview.dataSource = self
+        
+        badgeButton.badgeString = "\(count)"
+    }
+    
+    func setUpCart() {
+//        let button = CartBarButton
     }
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {

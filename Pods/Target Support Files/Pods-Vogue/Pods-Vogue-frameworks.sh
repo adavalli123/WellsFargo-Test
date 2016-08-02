@@ -86,18 +86,18 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-Vogue/Alamofire.framework"
   install_framework "Pods-Vogue/CBGPromise.framework"
-  install_framework "Pods-Vogue/JHSpinner.framework"
   install_framework "Pods-Vogue/MBProgressHUD.framework"
   install_framework "Pods-Vogue/MGSwipeTableCell.framework"
+  install_framework "Pods-Vogue/MIBadgeButton_Swift.framework"
   install_framework "Pods-Vogue/SwiftyJSON.framework"
   install_framework "Pods-Vogue/Swinject.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Vogue/Alamofire.framework"
   install_framework "Pods-Vogue/CBGPromise.framework"
-  install_framework "Pods-Vogue/JHSpinner.framework"
   install_framework "Pods-Vogue/MBProgressHUD.framework"
   install_framework "Pods-Vogue/MGSwipeTableCell.framework"
+  install_framework "Pods-Vogue/MIBadgeButton_Swift.framework"
   install_framework "Pods-Vogue/SwiftyJSON.framework"
   install_framework "Pods-Vogue/Swinject.framework"
 fi
