@@ -16,8 +16,8 @@ class ItemViewController: UIViewController, UIScrollViewDelegate {
     var imageViews:[UIImageView] = []
     var indexNumber: Int!
     
-//    var product: Product!
-//    var shoppingItemService: ShoppingItemService!
+    var product: Product!
+    var shoppingItemService: ShoppingItemService!
     
     @IBOutlet var pageControl: UIPageControl!
     var frame: CGRect = CGRectMake(0, 0, 0, 0)
@@ -44,16 +44,16 @@ class ItemViewController: UIViewController, UIScrollViewDelegate {
             }
         }
         
-//        shoppingItemService.updateList().then { result in
-//            dispatch_async(dispatch_get_main_queue()){
-//                switch result{
-//                case .success(let data):
-//                    self.loyaltyButton.setTitle("Loyalty Points: \(data)",forState: .Normal)
-//                case .failure:
-//                    print("Error in getting the data")
-//                }
-//            }
-//        }
+        shoppingItemService.updateList().then { result in
+            dispatch_async(dispatch_get_main_queue()){
+                switch result{
+                case .success(let data):
+                    self.loyaltyButton.setTitle("Loyalty Points: \(data)",forState: .Normal)
+                case .failure:
+                    print("Error in getting the data")
+                }
+            }
+        }
     }
     
     

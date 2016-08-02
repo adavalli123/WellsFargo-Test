@@ -17,8 +17,8 @@ extension SwinjectStoryboard {
         }
         
         defaultContainer.registerForStoryboard(ItemViewController.self) { resolver, controller in
-//            controller.shoppingItemService = resolver.resolve(ShoppingItemService.self)
-//            controller.product = resolver.resolve(Product.self)
+            controller.shoppingItemService = resolver.resolve(ShoppingItemService.self)
+            controller.product = resolver.resolve(Product.self)
         }
         
         
@@ -44,6 +44,11 @@ extension SwinjectStoryboard {
         defaultContainer.register(HTTPRequester.self) { resolver in
             HTTPRequesterImpl()
         }
+        
+//        defaultContainer.register(PresentationController.self) { resolver in
+//            PresentationController(presentedViewController: resolver.resolve(MainViewController.self)!, presentingViewController: resolver.resolve(TouchIDViewController.self)!)
+//        }
+        
         
         // MARK: Singletons
         defaultContainer.register(Product.self) { resolver in

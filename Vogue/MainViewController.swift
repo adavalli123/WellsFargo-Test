@@ -10,7 +10,7 @@ import UIKit
 import LocalAuthentication
 
 class MainViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -21,57 +21,16 @@ class MainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    
     @IBAction func authenticateWithTouchID(sender: AnyObject) {
-        // 1
-//        let context = LAContext()
-//        var error: NSError?
-//        
-//        // 2
-//        // check if Touch ID is available
-//        if context.canEvaluatePolicy(.DeviceOwnerAuthenticationWithBiometrics, error: &error) {
-//            // 3
-//            let reason = "Authenticate with Touch ID"
-//            context.evaluatePolicy(.DeviceOwnerAuthenticationWithBiometrics, localizedReason: reason, reply:
-//                {(succes: Bool, error: NSError?) in
-//                    // 4
-//                    if succes {
-//                        NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
-//                            self.showAlertController("Touch ID Authentication Succeeded")
-//                            
-//                            self.performSegueWithIdentifier("ItemViewController", sender: nil)
-//                        })
-//                        
-//                    }
-//                    else {
-//                        NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
-//                            self.showAlertController("Touch ID Authentication Failed")
-//                        })
-//                    }
-//            })
-//        }
-//            // 5
-//        else {
-//            NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
-//                self.showAlertController("Touch ID not available")
-//            })
-//        }
-        
-        
-        self.performSegueWithIdentifier("ItemViewController", sender: nil)
-    }
-
-    
-    func showAlertController(message: String) {
-        let alertController = UIAlertController(title: nil, message: message, preferredStyle: .Alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
-        presentViewController(alertController, animated: true, completion: nil)
+        self.performSegueWithIdentifier("touchID", sender: nil)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue?, sender: AnyObject?) {
         if segue!.identifier == "ItemViewController" {
         }
         
+        else if segue!.identifier == "touchID" {
+            
+        }
     }
 }
-
